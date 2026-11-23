@@ -57,7 +57,7 @@
   <line x1="792" y1="254" x2="1152" y2="254" stroke="#cbd5e1"/>
   <text x="792" y="291" font-size="19" font-weight="700">Core routed-trace attribution</text>
   <rect x="792" y="314" width="360" height="66" rx="8" fill="#e2e8f0"/>
-  <text x="810" y="355" font-size="21" font-weight="700">ACCEPTED</text>
+  <text x="810" y="355" font-size="21" font-weight="700">REJECTED</text>
   <text x="792" y="415" font-size="17" font-weight="700">Expected: REJECTED</text>
   <text x="792" y="452" class="small">Source owner: VM. Declared end pad: GND.</text>
   <text x="792" y="511" class="small">Physical contact must not redefine intent.</text>
