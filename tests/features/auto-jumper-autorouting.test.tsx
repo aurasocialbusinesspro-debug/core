@@ -1,6 +1,6 @@
-import { test, expect } from "bun:test"
-import { getTestFixture } from "../fixtures/get-test-fixture"
+import { expect, test } from "bun:test"
 import { getFullConnectivityMapFromCircuitJson } from "circuit-json-to-connectivity-map"
+import { getTestFixture } from "../fixtures/get-test-fixture"
 
 test("board with auto_jumper autorouter for single layer with crossing traces", async () => {
   const { circuit } = getTestFixture()
@@ -146,7 +146,8 @@ test("board with auto_jumper autorouter for single layer with crossing traces", 
       const dx = point.x - pad.x
       const dy = point.y - pad.y
       return Math.sqrt(dx * dx + dy * dy) <= pad.radius
-    } else if (pad.shape === "rect" || pad.shape === "rotated_rect") {
+    }
+    if (pad.shape === "rect" || pad.shape === "rotated_rect") {
       // For simplicity, treat rotated_rect as axis-aligned (good enough for this test)
       const halfWidth = pad.width / 2
       const halfHeight = pad.height / 2

@@ -1,5 +1,5 @@
-import type { LayerRef, PcbSmtPadRect } from "circuit-json"
 import type { CircuitJsonUtilObjects } from "@tscircuit/circuit-json-util"
+import type { LayerRef, PcbSmtPadRect } from "circuit-json"
 
 export interface AutoplacedJumperPad {
   center: { x: number; y: number }
