@@ -58,7 +58,7 @@ test("the full NEMA8 board rejects a routed trace with endpoints on VM and GND",
     "utf8",
   )
     .replace("{{result_label}}", "Core routed-trace attribution")
-    .replace("{{outcome}}", "ACCEPTED")
+    .replace("{{outcome}}", "REJECTED")
     .replace("{{expected}}", "Expected: REJECTED")
   await expect(visualRepro).toMatchSvgSnapshot(import.meta.path)
 })
